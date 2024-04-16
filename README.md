@@ -1,6 +1,6 @@
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/quality-score.png?b=v4)](https://scrutinizer-ci.com/g/nystudio107/craft-vite/?branch=v4) [![Code Coverage](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/coverage.png?b=v4)](https://scrutinizer-ci.com/g/nystudio107/craft-vite/?branch=v4) [![Build Status](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/build.png?b=v4)](https://scrutinizer-ci.com/g/nystudio107/craft-vite/build-status/v4) [![Code Intelligence Status](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/code-intelligence.svg?b=v4)](https://scrutinizer-ci.com/code-intelligence)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/quality-score.png?b=v5)](https://scrutinizer-ci.com/g/nystudio107/craft-vite/?branch=v5) [![Code Coverage](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/coverage.png?b=v5)](https://scrutinizer-ci.com/g/nystudio107/craft-vite/?branch=v5) [![Build Status](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/build.png?b=v5)](https://scrutinizer-ci.com/g/nystudio107/craft-vite/build-status/v5) [![Code Intelligence Status](https://scrutinizer-ci.com/g/nystudio107/craft-vite/badges/code-intelligence.svg?b=v5)](https://scrutinizer-ci.com/code-intelligence)
 
-# Vite plugin for Craft CMS 4.x
+# Vite plugin for Craft CMS 5.x
 
 Allows the use of the Vite.js next generation frontend tooling with Craft CMS
 
@@ -12,7 +12,7 @@ Most of the magic is actually in the [nystudio107/craft-plugin-vite](https://git
 
 ## Requirements
 
-This plugin requires Craft CMS 4.0.0 or later.
+This plugin requires Craft CMS 5.0.0 or later.
 
 **Installation**
 
