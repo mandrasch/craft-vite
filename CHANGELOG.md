@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.0.0 - 2024.04.16
+### Added
+* Stable release for Craft CMS 5
+* Add `craft/cloud` to `composer.json` for CI
+
 ## 5.0.0-beta.3 - 2024.03.02
 ### Added
 * Add documentation for Craft Cloud usage with Vite ([#83](https://github.com/nystudio107/craft-vite/pull/83))
