@@ -3,8 +3,15 @@
 All notable changes to this project will be documented in this file.
 
 ## 4.0.10 - UNRELEASED
+### Added
+* Added a `craft.vite.integrity()` method that will extract the integrity hash (for building a Content Security Policy)
+* Added an `includeScriptOnloadHandler` config setting that allows you to disable the adding of an `onload` handler on the `<script>` tags (useful when implementing a Content Security Policy)
+
 ### Changed
 * Filter out empty attributes so they don't render on the `<script>` tags
+
+### Fixed
+* Use `strrpos` instead of `strpos` when attempting to extract a file name without the hash ([#28](https://github.com/nystudio107/craft-plugin-vite/pull/28))
 
 ## 4.0.9 - 2024.03.02
 ### Added
