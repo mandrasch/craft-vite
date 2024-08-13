@@ -154,7 +154,7 @@ class Vite extends Plugin
             Event::on(
                 UpController::class,
                 UpController::EVENT_AFTER_UP,
-                function (CancelableEvent $event) {
+                function(CancelableEvent $event) {
                     $this->clearAllCaches();
                 }
             );
