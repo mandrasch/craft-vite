@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.0.1 - UNRELEASED
+### Changed
+* Filter out empty attributes so they don't render on the `<script>` tags
+
 ## 5.0.0 - 2024.04.16
 ### Added
 * Stable release for Craft CMS 5
