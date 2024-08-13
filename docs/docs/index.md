@@ -114,6 +114,7 @@ These are completely optional settings that you probably won’t need to change:
 * **`includeModulePreloadShim`** - whether or not
   the [shim for `modulepreload-polyfill`](https://vitejs.dev/guide/features.html#preload-directives-generation) should
   be included to polyfill `<link rel="modulepreload">`
+* **`includeScriptOnloadHandler`** - allows you to disable the adding of an `onload` handler on the `<script>` tags (useful when implementing a [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP))
 
 If you’re using the [rollup-plugin-critical](https://github.com/nystudio107/rollup-plugin-critical) to
 generate [critical CSS](https://nystudio107.com/blog/implementing-critical-css), use these settings:
@@ -757,6 +758,24 @@ This assumes your `vite.config.js` looks something like this:
     }
   },
 ```
+
+### The `.integrity()` function
+
+The Vite plugin includes an `.integrity()` function that will return the `integrity` hash if you're using the [vite-plugin-manifest-sri](https://www.npmjs.com/package/vite-plugin-manifest-sri) plugin for [sub-resource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) and you need the hash to build your [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+
+You pass in a relative path to the entry, just as you do for JavaScript files in Vite. For example:
+
+```twig
+    {{ craft.vite.integrity("app.ts") }}
+```
+
+This will return the integrity hash from the manifest:
+
+```
+sha384-OFM4tseEj4P0uGf60m1BYV0vqDU2Ljj2ugL5zZBvHlsEpYIoEbTPfQuRsz9lgr75
+```
+
+If there is no `integrity` hash, or the manifest entry is not found, it will return an empty string.
 
 ### The `.inline()` function
 
