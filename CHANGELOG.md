@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.0.10 - UNRELEASED
+### Changed
+* Filter out empty attributes so they don't render on the `<script>` tags
+
 ## 4.0.9 - 2024.03.02
 ### Added
 * Add documentation for Craft Cloud usage with Vite ([#83](https://github.com/nystudio107/craft-vite/pull/83))
