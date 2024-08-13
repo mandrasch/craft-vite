@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.35 - UNRELEASED
+### Changed
+* Filter out empty attributes so they don't render on the `<script>` tags
+
 ## 1.0.34 - 2024.03.02
 ### Fixed
 * Fixed an issue where the wrong CSS hash would be returned if you were using Vite 3 or earlier ([#80](https://github.com/nystudio107/craft-vite/issues/80))
