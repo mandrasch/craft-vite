@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## 1.0.35 - UNRELEASED
+## 1.0.35 - 2024.08.13
 ### Added
 * Added a `craft.vite.integrity()` method that will extract the integrity hash (for building a Content Security Policy)
 * Added an `includeScriptOnloadHandler` config setting that allows you to disable the adding of an `onload` handler on the `<script>` tags (useful when implementing a Content Security Policy)
