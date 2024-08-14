@@ -88,4 +88,9 @@ return [
      * @var string the suffix added to the name of the currently rendering template for the critical css file name
      */
     'criticalSuffix' => '_critical.min.css',
+
+    /**
+     * @var bool Whether an onload handler should be added to <script> tags to fire a custom event when the script has loaded
+     */
+    'includeScriptOnloadHandler' => true,
 ];
