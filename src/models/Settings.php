@@ -85,6 +85,11 @@ class Settings extends Model
      */
     public $criticalSuffix = '_critical.min.css';
 
+    /**
+     * @var bool Whether an onload handler should be added to <script> tags to fire a custom event when the script has loaded
+     */
+    public $includeScriptOnloadHandler = true;
+
     // Public Methods
     // =========================================================================
 
@@ -100,6 +105,7 @@ class Settings extends Model
                     'checkDevServer',
                     'includeReactRefreshShim',
                     'includeModulePreloadShim',
+                    'includeScriptOnloadHandler',
                 ],
                 'boolean',
             ],
